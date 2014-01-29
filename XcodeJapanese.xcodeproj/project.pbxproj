@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		2A64C10218987E3F00E2CFE6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A64C10118987E3F00E2CFE6 /* Cocoa.framework */; };
 		2A64C10C18987E3F00E2CFE6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A64C10A18987E3F00E2CFE6 /* InfoPlist.strings */; };
+		2A64C1151898900700E2CFE6 /* XcodeJapanese.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A64C1141898900700E2CFE6 /* XcodeJapanese.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2A64C0FE18987E3F00E2CFE6 /* XcodeJapanese.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodeJapanese.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A64C0FE18987E3F00E2CFE6 /* XcodeJapanese.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodeJapanese.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A64C10118987E3F00E2CFE6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		2A64C10418987E3F00E2CFE6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2A64C10518987E3F00E2CFE6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -20,6 +21,8 @@
 		2A64C10918987E3F00E2CFE6 /* XcodeJapanese-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XcodeJapanese-Info.plist"; sourceTree = "<group>"; };
 		2A64C10B18987E3F00E2CFE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2A64C10D18987E3F00E2CFE6 /* XcodeJapanese-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XcodeJapanese-Prefix.pch"; sourceTree = "<group>"; };
+		2A64C1131898900700E2CFE6 /* XcodeJapanese.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcodeJapanese.h; sourceTree = "<group>"; };
+		2A64C1141898900700E2CFE6 /* XcodeJapanese.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XcodeJapanese.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +49,7 @@
 		2A64C0FF18987E3F00E2CFE6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2A64C0FE18987E3F00E2CFE6 /* XcodeJapanese.bundle */,
+				2A64C0FE18987E3F00E2CFE6 /* XcodeJapanese.xcplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				2A64C10818987E3F00E2CFE6 /* Supporting Files */,
+				2A64C1131898900700E2CFE6 /* XcodeJapanese.h */,
+				2A64C1141898900700E2CFE6 /* XcodeJapanese.m */,
 			);
 			path = XcodeJapanese;
 			sourceTree = "<group>";
@@ -105,7 +110,7 @@
 			);
 			name = XcodeJapanese;
 			productName = XcodeJapanese;
-			productReference = 2A64C0FE18987E3F00E2CFE6 /* XcodeJapanese.bundle */;
+			productReference = 2A64C0FE18987E3F00E2CFE6 /* XcodeJapanese.xcplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -150,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A64C1151898900700E2CFE6 /* XcodeJapanese.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,26 +244,44 @@
 		2A64C11118987E3F00E2CFE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XcodeJapanese/XcodeJapanese-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/SharedFrameworks",
+				);
 				INFOPLIST_FILE = "XcodeJapanese/XcodeJapanese-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				LIBRARY_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = bundle;
+				WRAPPER_EXTENSION = xcplugin;
 			};
 			name = Debug;
 		};
 		2A64C11218987E3F00E2CFE6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XcodeJapanese/XcodeJapanese-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/SharedFrameworks",
+				);
 				INFOPLIST_FILE = "XcodeJapanese/XcodeJapanese-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				LIBRARY_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = bundle;
+				WRAPPER_EXTENSION = xcplugin;
 			};
 			name = Release;
 		};
@@ -280,6 +304,7 @@
 				2A64C11218987E3F00E2CFE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

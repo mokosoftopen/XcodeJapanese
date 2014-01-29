@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2A64C0FD18987E3F00E2CFE6"
-               BuildableName = "XcodeJapanese.bundle"
+               BuildableName = "XcodeJapanese.xcplugin"
                BlueprintName = "XcodeJapanese"
                ReferencedContainer = "container:XcodeJapanese.xcodeproj">
             </BuildableReference>
