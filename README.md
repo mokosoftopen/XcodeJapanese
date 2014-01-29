@@ -10,3 +10,9 @@ gitよりプロジェクトをダウンロードし、プロジェクトをXccod
 Xcodeを再起動すれば適応されます。
 
 Xcode5.0.2で動作確認
+
+
+アンインストール方法
+/Users/hoge/Library/Application Support/Developer/Shared/Xcode/Plug-ins/
+フォルダ化にそれっぽいプラグインファイルがあるので削除して、Xcodeを再起動してください。
+
