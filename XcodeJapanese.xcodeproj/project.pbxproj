@@ -1,0 +1,287 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A64C10218987E3F00E2CFE6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A64C10118987E3F00E2CFE6 /* Cocoa.framework */; };
+		2A64C10C18987E3F00E2CFE6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A64C10A18987E3F00E2CFE6 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2A64C0FE18987E3F00E2CFE6 /* XcodeJapanese.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodeJapanese.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A64C10118987E3F00E2CFE6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		2A64C10418987E3F00E2CFE6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2A64C10518987E3F00E2CFE6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2A64C10618987E3F00E2CFE6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		2A64C10918987E3F00E2CFE6 /* XcodeJapanese-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XcodeJapanese-Info.plist"; sourceTree = "<group>"; };
+		2A64C10B18987E3F00E2CFE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2A64C10D18987E3F00E2CFE6 /* XcodeJapanese-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XcodeJapanese-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A64C0FB18987E3F00E2CFE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A64C10218987E3F00E2CFE6 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A64C0F518987E3F00E2CFE6 = {
+			isa = PBXGroup;
+			children = (
+				2A64C10718987E3F00E2CFE6 /* XcodeJapanese */,
+				2A64C10018987E3F00E2CFE6 /* Frameworks */,
+				2A64C0FF18987E3F00E2CFE6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A64C0FF18987E3F00E2CFE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A64C0FE18987E3F00E2CFE6 /* XcodeJapanese.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A64C10018987E3F00E2CFE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A64C10118987E3F00E2CFE6 /* Cocoa.framework */,
+				2A64C10318987E3F00E2CFE6 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A64C10318987E3F00E2CFE6 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A64C10418987E3F00E2CFE6 /* Foundation.framework */,
+				2A64C10518987E3F00E2CFE6 /* CoreData.framework */,
+				2A64C10618987E3F00E2CFE6 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		2A64C10718987E3F00E2CFE6 /* XcodeJapanese */ = {
+			isa = PBXGroup;
+			children = (
+				2A64C10818987E3F00E2CFE6 /* Supporting Files */,
+			);
+			path = XcodeJapanese;
+			sourceTree = "<group>";
+		};
+		2A64C10818987E3F00E2CFE6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A64C10918987E3F00E2CFE6 /* XcodeJapanese-Info.plist */,
+				2A64C10A18987E3F00E2CFE6 /* InfoPlist.strings */,
+				2A64C10D18987E3F00E2CFE6 /* XcodeJapanese-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A64C0FD18987E3F00E2CFE6 /* XcodeJapanese */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A64C11018987E3F00E2CFE6 /* Build configuration list for PBXNativeTarget "XcodeJapanese" */;
+			buildPhases = (
+				2A64C0FA18987E3F00E2CFE6 /* Sources */,
+				2A64C0FB18987E3F00E2CFE6 /* Frameworks */,
+				2A64C0FC18987E3F00E2CFE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XcodeJapanese;
+			productName = XcodeJapanese;
+			productReference = 2A64C0FE18987E3F00E2CFE6 /* XcodeJapanese.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A64C0F618987E3F00E2CFE6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = mokosoft;
+			};
+			buildConfigurationList = 2A64C0F918987E3F00E2CFE6 /* Build configuration list for PBXProject "XcodeJapanese" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2A64C0F518987E3F00E2CFE6;
+			productRefGroup = 2A64C0FF18987E3F00E2CFE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A64C0FD18987E3F00E2CFE6 /* XcodeJapanese */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A64C0FC18987E3F00E2CFE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A64C10C18987E3F00E2CFE6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A64C0FA18987E3F00E2CFE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2A64C10A18987E3F00E2CFE6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A64C10B18987E3F00E2CFE6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A64C10E18987E3F00E2CFE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2A64C10F18987E3F00E2CFE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2A64C11118987E3F00E2CFE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XcodeJapanese/XcodeJapanese-Prefix.pch";
+				INFOPLIST_FILE = "XcodeJapanese/XcodeJapanese-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		2A64C11218987E3F00E2CFE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XcodeJapanese/XcodeJapanese-Prefix.pch";
+				INFOPLIST_FILE = "XcodeJapanese/XcodeJapanese-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A64C0F918987E3F00E2CFE6 /* Build configuration list for PBXProject "XcodeJapanese" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A64C10E18987E3F00E2CFE6 /* Debug */,
+				2A64C10F18987E3F00E2CFE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A64C11018987E3F00E2CFE6 /* Build configuration list for PBXNativeTarget "XcodeJapanese" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A64C11118987E3F00E2CFE6 /* Debug */,
+				2A64C11218987E3F00E2CFE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A64C0F618987E3F00E2CFE6 /* Project object */;
+}
